@@ -102,8 +102,6 @@ begin
   img8.Picture.Graphic := nil;
   img9.Picture.Graphic := nil;
 
-  jogadasPrimeiroJogador := nil;
-
   for i := 0 to Length(jogadasPrimeiroJogador) -1 do
     jogadasPrimeiroJogador[i] := '';
 

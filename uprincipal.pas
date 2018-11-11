@@ -65,6 +65,7 @@ begin
     if numeroJogadas mod 2 = 0 then
     begin
       img.Picture.LoadFromFile('img\Cebolinha.png');
+
       jogadasPrimeiroJogador[numeroJogadas] := Copy(img.Name, 4, 1);
     end
     else
