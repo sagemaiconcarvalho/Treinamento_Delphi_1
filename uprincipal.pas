@@ -46,8 +46,6 @@ const
   POSIBILIDADE_4: array[0..2] of string  = ('1','4','7');
   POSIBILIDADE_5: array[0..2] of string  = ('2','5','8');
   POSIBILIDADE_6: array[0..2] of string  = ('3','6','9');
-  POSIBILIDADE_7: array[0..2] of string  = ('1','5','9');
-  POSIBILIDADE_8: array[0..2] of string  = ('3','5','7');
 
 {$R *.lfm}
 
@@ -139,10 +137,6 @@ begin
     Result := jogadorGanhou(jogadas, POSIBILIDADE_5);
   if not Result then
     Result := jogadorGanhou(jogadas, POSIBILIDADE_6);
-  if not Result then
-    Result := jogadorGanhou(jogadas, POSIBILIDADE_7);
-  if not Result then
-    Result := jogadorGanhou(jogadas, POSIBILIDADE_8);
 end;
 
 end.
