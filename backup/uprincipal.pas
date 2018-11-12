@@ -12,16 +12,16 @@ type
   { TfrmPrincipal }
 
   TfrmPrincipal = class(TForm)
-    imgFundo: TImage;
-    img8: TImage;
+    Image1: TImage;
     img9: TImage;
     img1: TImage;
     img2: TImage;
     img3: TImage;
     img4: TImage;
-    img7: TImage;
     img5: TImage;
     img6: TImage;
+    img7: TImage;
+    img8: TImage;
     procedure img1Click(Sender: TObject);
   private
     jogadasPrimeiroJogador, jogadasSegundoJogador: Array[0..8] of String;
@@ -46,8 +46,6 @@ const
   POSIBILIDADE_4: array[0..2] of string  = ('1','4','7');
   POSIBILIDADE_5: array[0..2] of string  = ('2','5','8');
   POSIBILIDADE_6: array[0..2] of string  = ('3','6','9');
-  POSIBILIDADE_7: array[0..2] of string  = ('1','5','9');
-  POSIBILIDADE_8: array[0..2] of string  = ('3','5','7');
 
 {$R *.lfm}
 
@@ -65,6 +63,7 @@ begin
     if numeroJogadas mod 2 = 0 then
     begin
       img.Picture.LoadFromFile('img\Cebolinha.png');
+
       jogadasPrimeiroJogador[numeroJogadas] := Copy(img.Name, 4, 1);
     end
     else
@@ -139,11 +138,8 @@ begin
     Result := jogadorGanhou(jogadas, POSIBILIDADE_5);
   if not Result then
     Result := jogadorGanhou(jogadas, POSIBILIDADE_6);
-  if not Result then
-    Result := jogadorGanhou(jogadas, POSIBILIDADE_7);
-  if not Result then
-    Result := jogadorGanhou(jogadas, POSIBILIDADE_8);
 end;
 
 end.
+
 

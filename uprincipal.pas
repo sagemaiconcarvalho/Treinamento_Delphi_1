@@ -12,16 +12,16 @@ type
   { TfrmPrincipal }
 
   TfrmPrincipal = class(TForm)
-    imgFundo: TImage;
-    img8: TImage;
+    Image1: TImage;
     img9: TImage;
     img1: TImage;
     img2: TImage;
     img3: TImage;
     img4: TImage;
-    img7: TImage;
     img5: TImage;
     img6: TImage;
+    img7: TImage;
+    img8: TImage;
     procedure img1Click(Sender: TObject);
   private
     jogadasPrimeiroJogador, jogadasSegundoJogador: Array[0..8] of String;
@@ -141,4 +141,5 @@ begin
 end;
 
 end.
+
 

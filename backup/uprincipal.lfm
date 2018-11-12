@@ -1,19 +1,19 @@
 object frmPrincipal: TfrmPrincipal
-  Left = -1116
-  Height = 321
-  Top = 221
+  Left = 256
+  Height = 248
+  Top = 127
   Width = 297
   Caption = 'Jogo da Velha'
-  ClientHeight = 321
+  ClientHeight = 248
   ClientWidth = 297
   LCLVersion = '1.8.4.0'
-  object imgFundo: TImage
+  object Image1: TImage
     Left = 0
-    Height = 321
+    Height = 248
     Top = 0
     Width = 297
     Align = alClient
-    OnDblClick = img1Click
+    OnClick = img1Click
     Picture.Data = {
       0A544A706567496D61676511420000FFD8FFE000104A46494600010100000100
       010000FFE1002A45786966000049492A0008000000010031010200070000001A
@@ -547,64 +547,64 @@ object frmPrincipal: TfrmPrincipal
     }
   end
   object img1: TImage
-    Left = 7
+    Left = 8
     Height = 80
-    Top = 6
+    Top = 7
     Width = 89
     OnClick = img1Click
   end
   object img2: TImage
     Left = 101
-    Height = 79
-    Top = 6
+    Height = 80
+    Top = 7
     Width = 89
     OnClick = img1Click
   end
   object img3: TImage
     Left = 196
-    Height = 79
-    Top = 6
+    Height = 80
+    Top = 7
     Width = 89
     OnClick = img1Click
   end
   object img4: TImage
-    Left = 7
+    Left = 8
     Height = 79
-    Top = 88
-    Width = 89
-    OnClick = img1Click
-  end
-  object img7: TImage
-    Left = 7
-    Height = 79
-    Top = 170
+    Top = 89
     Width = 89
     OnClick = img1Click
   end
   object img5: TImage
     Left = 101
-    Height = 79
-    Top = 88
+    Height = 80
+    Top = 89
     Width = 89
     OnClick = img1Click
   end
   object img6: TImage
     Left = 196
-    Height = 79
-    Top = 88
+    Height = 80
+    Top = 89
+    Width = 89
+    OnClick = img1Click
+  end
+  object img7: TImage
+    Left = 8
+    Height = 80
+    Top = 170
     Width = 89
     OnClick = img1Click
   end
   object img8: TImage
     Left = 101
-    Height = 79
+    Height = 80
     Top = 170
     Width = 89
     OnClick = img1Click
   end
   object img9: TImage
     Left = 196
-    Height = 79
+    Height = 80
     Top = 170
     Width = 89
     OnClick = img1Click
